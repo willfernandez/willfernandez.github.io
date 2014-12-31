@@ -7,10 +7,14 @@ html
   line-height: 125%;
   color: #5e5e5e;
 
+body
+  margin 0
+    
 
 header
   background linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 1%,rgba(239,239,239,0.9) 95%,rgba(238,238,238,0.9) 100%)
   border-top 4px solid #01587d
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2);
   color white
   position fixed
   top 0
@@ -32,7 +36,9 @@ header
   top 80px
   width 100%
   background #01587d url('../img/presentacion.jpg') no-repeat center center
-  background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  -webkit-background-size cover
   h1
     color white
     font-size 3em
@@ -71,6 +77,10 @@ header
     background: #01587d url("../img/presentacion.jpg") no-repeat left center;
     h1
       font-size 2em
+    .box-presentacion
+      width 91%
+      margin 0 2%
+    
   .about
     .profile
       height 100px
