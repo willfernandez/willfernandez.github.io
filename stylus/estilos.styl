@@ -1,1 +1,77 @@
-estilos.styl
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)
+html
+  background #01587d
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 125%;
+  color: #5e5e5e;
+
+
+header
+  background linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 1%,rgba(239,239,239,0.9) 95%,rgba(238,238,238,0.9) 100%)
+  border-top 4px solid #01587d
+  color white
+  position fixed
+  top 0
+  width 100%
+  z-index 999
+  h2
+    font-size 24px
+    font-weight 400
+    color #000
+
+::selection
+  background rgba(255,111,72,0.5)
+::-moz-selection
+  background:rgba(255,111,72,0.5)
+  
+.presentacion
+  position fixed
+  text-align center
+  top 80px
+  width 100%
+  background #01587d url('../img/presentacion.jpg') no-repeat center center
+  background-size cover
+  h1
+    color white
+    font-size 3em
+    font-weight 400
+    line-height 125%
+    margin 0 40px 20px 40px
+  .box-presentacion
+    width 100%
+    position absolute
+    top 40%
+
+
+.about
+  background white
+  float left
+  position relative
+  .profile
+    border-radius 50%
+    display block
+    height 224px
+    margin 8% auto 4% auto
+    position relative
+    width 259px
+
+@media only screen and (max-width : 1200px)
+  .presentacion
+    h1
+      margin-left 0
+      margin-right 0
+      
+
+@media only screen and (max-width : 600px)
+  body
+    font-size 16px
+  .presentacion
+    background: #01587d url("../img/presentacion.jpg") no-repeat left center;
+    h1
+      font-size 2em
+  .about
+    .profile
+      height 100px
+      width 150px
