@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
 html
   background #01587d
   font-family: 'Lato',sans-serif;
@@ -25,6 +26,17 @@ header
     font-weight 400
     color #000
 
+article
+  max-width 1400px
+  position relative
+  width 100%
+  z-index 2
+blockquote
+  font-family: 'Berkshire Swash', cursive;
+  font-size 1.06em
+  font-weight 400
+  line-height 165%
+  
 ::selection
   background rgba(255,111,72,0.5)
 ::-moz-selection
@@ -39,16 +51,21 @@ header
   -moz-background-size cover
   -o-background-size cover
   -webkit-background-size cover
+  article
+    margin 0 auto
+    max-width 100%
+    position static
+    width auto
   h1
     color #fff
-    font-size 3em
+    font-size 3.3em
     font-weight 400
   p
     background rgba(1,88,125,0.6)
     border-radius 50px
     box-shadow 0 3px 1px rgba(0,0,0, 0.3), inset 0 1px 1px rgba(255,255,255, 0.2)
     color #ff6f48
-    font-size 1.5em
+    font-size 1.3em
     font-weight 300
     line-height 125%
     margin 0 40px 20px 40px
@@ -68,9 +85,14 @@ header
     border-radius 50%
     display block
     height 224px
-    margin 8% auto 4% auto
+    margin 8% auto 2% auto
     position relative
     width 259px
+  blockquote
+    margin 0
+    padding 0 20% 8% 20%
+    position relative
+    text-align center
 
 @media only screen and (max-width : 1200px)
   .presentacion
@@ -82,19 +104,27 @@ header
      p
       margin 0
       font-size 1em
+    
+  .about
+    blockquote
+      padding-left 2%
+      padding-right 2%
 
       
 
 @media only screen and (max-width : 600px)
   body
     font-size 16px
+  
+  article
+    width 96%
   .presentacion
     background: #01587d url("../img/presentacion.jpg") no-repeat left center;
     h1
-      font-size 2em
+      font-size 2.6em
     p
       margin 0
-      font-size 1em
+      font-size 1.3em
     .box-presentacion
       width 91%
       margin 0 2%
@@ -103,3 +133,6 @@ header
     .profile
       height 100px
       width 150px
+    blockquote
+      padding-left 2%
+      padding-right 2%
