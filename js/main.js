@@ -8,8 +8,8 @@ $( document ).ready(function() {
 		        triggerOnce: true
 		    });
 
-		     $('.trabajos .pProyecto').waypoint(function() {
-		        $(this).toggleClass( 'rotateIn  animated' );
+		     $('.pProyecto').waypoint(function() {
+		        $(this).toggleClass( 'bounceIn  animated' );
 		    },
 		    {
 		        offset: '70%',
@@ -32,7 +32,7 @@ $( document ).ready(function() {
 		    });
     
 	});
-	
+
 });
 
 function windowContainerSizing(){
