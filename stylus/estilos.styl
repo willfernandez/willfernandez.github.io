@@ -1,12 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)
-@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption)
+
 html
   background #01587d
-  font-family: 'Lato',sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 125%;
-  color: #5e5e5e;
+  font-family: 'Lato'
+  font-weight: 300
+  font-size: 24px
+  line-height: 125%
+  color: #5e5e5e
 
 body
   margin 0
@@ -31,9 +32,22 @@ article
   position relative
   width 100%
   z-index 2
+h1 h2 h3 h4
+  font-weight 400
+  line-height 125%
+  
+h3
+  color #fff
+  font-size 2em
+  font-weight 700
+  letter-spacing .2em
+  text-transform uppercase
+p
+  line-height 140%
+
 blockquote
-  font-family: 'Berkshire Swash', cursive;
-  font-size 1.06em
+  font-family: 'PT Serif Caption', serif;
+  font-size 1.35em
   font-weight 400
   line-height 165%
   
@@ -60,6 +74,7 @@ blockquote
     color #fff
     font-size 3.3em
     font-weight 400
+    opacity 0
   p
     background rgba(1,88,125,0.6)
     border-radius 50px
@@ -90,9 +105,43 @@ blockquote
     width 259px
   blockquote
     margin 0
-    padding 0 20% 8% 20%
+    padding 0 25% 8% 25%
     position relative
     text-align center
+  p
+    opacity 0
+
+.trabajos
+  background #01587d
+  display block
+  float: left
+  height 100%
+  position relative
+  width 100%
+  z-index 2
+  padding 100px 0 100px 0
+  h3
+    text-align center
+    opacity 0
+  .pProyecto 
+    color #002a3d
+    font-family 'PT Serif Caption'
+    font-size 1.5em
+    font-weight 400
+    opacity 0
+.pProyecto:after
+    content ""
+    background #fff
+    position relative
+    width 200px
+    height 6px
+    display block
+    margin 50px auto 20px auto
+  
+  p
+    text-align center
+  
+    
 
 @media only screen and (max-width : 1200px)
   .presentacion
