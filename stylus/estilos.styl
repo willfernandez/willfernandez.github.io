@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)
 @import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption)
 
-verde = #7DA400
+verde = #749801
 html
-  background #01587d
+  background verde
   font-family: 'Lato'
   font-weight: 300
   font-size: 24px
@@ -16,17 +16,53 @@ body
 
 header
   background linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 1%,rgba(239,239,239,0.9) 95%,rgba(238,238,238,0.9) 100%)
-  border-top 4px solid verde
+  border-top 3px solid verde
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2);
   color white
   position fixed
   top 0
   width 100%
   z-index 999
+  .container
+    padding 0 20px
+    .btnPortafolio
+      float right
   h2
-    font-size 24px
+    font-size 1.08em
     font-weight 400
-    color #000
+    color verde
+  .logo
+    width 50px
+    float left
+    margin -7px 7px 0 0
+    -webkit-transition:transform 0.2s ease
+    -moz-transition:transform 0.2s ease 
+    transition:transform 0.2s ease
+    &:hover
+      -webkit-transform rotateY( 180deg )
+      -moz-transform rotateY( 180deg )
+      transform:rotateY( 180deg )
+
+.btnPortafolio
+  background rgba(116,152,1,0.55)
+  border 1px solid verde
+  border-radius 2px
+  color #fff
+  font-size 0.75em
+  margin -10px 10px
+  padding 9px 20px
+  text-align center
+  text-decoration none
+  text-transform uppercase
+  transition background 0.2s  ease
+  -webkit-transition background 0.2s  ease
+  -moz-transition background 0.2s  ease
+  -webkit-box-shadow 0px 8px 5px 0px rgba(50, 50, 56, 0.55)
+  -moz-box-shadow    0px 8px 5px 0px rgba(50, 50, 56, 0.55)
+  box-shadow         0px 8px 5px 0px rgba(50, 50, 56, 0.55)
+  &:hover
+    background rgba(116,152,1,0.9)
+    box-shadow 0 3px 5px rgba(0,0,0,0.3)
 
 article
   max-width 1400px
@@ -45,6 +81,16 @@ h3
   text-transform uppercase
 p
   line-height 140%
+
+a
+  background: transparent
+  text-decoration none
+  color verde
+  transition background .1s ease
+  -webkit-transition background .1s ease
+  -moz-transition background .1s ease
+  &:hover
+    background rgba(125,164,0,0.2)
 
 blockquote
   font-family: 'PT Serif Caption', serif;
@@ -201,8 +247,17 @@ blockquote
   p
     opacity 0
 
+.more:before
+  content " "
+  display table
+
+.more:after 
+  content " "
+  display table
+
+
 .trabajos
-  background #047AAD
+  background #01587d
   display block
   float: left
   height 100%
