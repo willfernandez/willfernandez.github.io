@@ -5,30 +5,27 @@ $( document ).ready(function() {
 		    },
 		    {
 		        offset: '70%',
-		        triggerOnce: true
 		    });
 
 		     $('.pProyecto').waypoint(function() {
 		        $(this).toggleClass( 'bounceIn  animated' );
 		    },
 		    {
-		        offset: '70%',
-		        triggerOnce: true
+		        offset: '90%',
 		    });
 
 		     $('h3').waypoint(function() {
 		        $(this).toggleClass( 'fadeInLeft  animated' );
 		    },
 		    {
-		        offset: '70%',
-		        triggerOnce: true
+		        offset: '90%',
 		    });
 		     $('h1').waypoint(function() {
 		        $(this).toggleClass( 'lightSpeedIn  animated' );
 		    },
 		    {
-		        offset: '70%',
-		        triggerOnce: true
+		        offset: '90%',
+		      //  triggerOnce: true
 		    });
     
 	});
@@ -64,3 +61,64 @@ $('a[href^="#"]').on('click', function(event) {
     }
 
 });
+
+
+
+$('.about a').click(function(e){
+	$('html').css({'overflow-y':'hidden'});
+	$('body').css({'padding-right':getScrollBarWidth()});
+	var verScrollPos=$(document).scrollTop();
+	$(document).scrollTop(verScrollPos);
+	$('#overlay').fadeIn().scrollTop(0);
+	$('#overlay p').show();
+	$('#overlay p').removeClass().addClass('zoomIn animated');
+	history.pushState({},'',this.href);
+	e.preventDefault();
+});
+
+var overlayTextHeight=$('.overlay p').height()/2;
+$('.overlay p').css({marginTop:overlayTextHeight*-1});
+
+function getScrollBarWidth(){
+	var $outer=$('<div>').css({visibility:'hidden',width:100,overflow:'scroll'}).appendTo('body'),
+	widthWithScroll=$('<div>').css({width:'100%'}).appendTo($outer).outerWidth();
+	$outer.remove();
+
+	return 100-widthWithScroll;
+};
+
+$('.work a').click(function(e){
+	$('html').css({'overflow-y':'hidden'});
+	$('body').css({'padding-right':getScrollBarWidth()});
+	var verScrollPos=$(document).scrollTop();
+	$(document).scrollTop(verScrollPos);
+	var currentLi=$(this).parent('.work').index();
+	alert(currentLi);
+	$('#overlay').fadeIn().scrollTop(0);
+	$('#overlay li').eq(currentLi).show();
+	$('#overlay img').removeClass().addClass('zoomIn animated');
+	history.pushState({},'',this.href);
+	e.preventDefault();
+});
+
+$('#overlay').click(function(){
+	$('html').css({'overflow-y':'scroll'});
+	$('body').css({'padding-right':0});
+	$('#overlay img').removeClass().addClass('zoomOut animated');
+
+	setTimeout(function(){
+		$('#overlay').fadeOut();
+		$('#overlay li').hide();
+		},200);
+
+	history.pushState('',document.title,window.location.pathname);
+});
+
+if(window.location.hash){
+	var currentHash=window.location.hash;
+	$('.work a').each(function(){
+		if($(this).attr('href')==currentHash){
+			$(this).click();
+		}
+	});
+}

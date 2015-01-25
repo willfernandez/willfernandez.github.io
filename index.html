@@ -14,9 +14,12 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 </head>
 <script type="text/javascript">
 
@@ -30,6 +33,7 @@
 		<h2>Willy Fernández</h2>
 	</div>
 	</header>
+<div class="wrap">
 	<section class="presentacion">
 		<article>
 			<div class="box-presentacion">
@@ -49,7 +53,18 @@
 			<blockquote>
 			<p>
 			Hi, mi nombre es Willy Fernández soy Ingeniero de Sistemas y un apasionado por la realización de diseños web elegantes y la programación de código serio. Actualmente trabajando en proyectos educativos-universitarios. Sudo pixeles, tipografía y código.</p>
-			<p>Si desea, puede leer un poco <a href="#" class="more">más sobre mí →</a></p>
+			<p>Si desea, puede leer un poco.
+			<p>
+			En medio de mi trabajo diario y jugar con mi gato, me gusta realizar proyectos paralelos para nuevas  empresas en face inicial y negocios personales.
+			</p>
+			<p>
+			Lejos de la pantalla paso la mayor parte de mi tiempo intentando aprender a tocar guitarra, o leyendo un libro en la plaza de mi ciudad.
+			</p>
+			<p>
+				Sientete libre en seguirme en Twitter, o estar al día en lo que estoy trabajando a travez de Github. Listo y dispuesto a hablar sobre sus necesidades de proyectos o de lo mal que salen mis covers en guitarra. - willyfernandez12@gmail.com
+			</p>
+
+
 			<!--<p>
 			En medio de mi trabajo diario y jugar con mi gato, me gusta realizar proyectos paralelos para nuevas  empresas en face inicial y negocios personales.
 			</p>
@@ -64,15 +79,195 @@
 		</article>
 	</section>
 
+	<section class="slider demo-1">
+		<article style="position: static;">
+				    		<!--<h2> Trabajos recientes</h2>
+								<p class="pProyecto">Una selección de mis recientes proyectos realizados</p>-->
+								<div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="H"></div>
+							<h2>A bene placito</h2>
+							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>Regula aurea</h2>
+							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+							<h2>Dum spiro, spero</h2>
+							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="I"></div>
+							<h2>Donna nobis pacem</h2>
+							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+						</div>
+					</div>
+					
+					<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="deco" data-icon="t"></div>
+							<h2>Acta Non Verba</h2>
+							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+						</div>
+					</div>
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+		</article>
+	</section>
+	<section id="overlay">
+		<article>
+			<ul>
+				<li><img src="img/encuestaAcredita.png" /></li>
+				<li><img src="img/egresados.png" /></li>
+			</ul>
+		</article>
+	</section>
 	<section class="trabajos">
 		<article>
-			<h3> Trabajos recientes</h3>
-			<p class="pProyecto">Una selección de mis recientes proyectos realizados</p>
+				<h3> Trabajos recientes</h3>
+				<p class="pProyecto">Una selección de mis recientes proyectos realizados</p>
+			<div class="bloque-trabajo">
+				<div class="work">
+					<a href="#encuesta">
+						<img src="img/encuestaAcredita.png" width="300" height="200" />
+						<div class="mascara">
+							<h4> Sistema Virtual de Acreditacion</h4>
+							<p>encuentas, reportes, modelos de calidad</p>
+						</div>
+					</a>
+				</div>
 
+				<div class="work">
+					<a href="#dd">
+						<img src="img/egresados.png" width="300" height="200" />
+						<div class="mascara">
+							<h4> Sistema Virtual de Acreditacion</h4>
+							<p>encuentas, reportes, modelos de calidad</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</article>
-		
 	</section>
+</div>
+
 
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+
+	<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
 </body>
 </html>
