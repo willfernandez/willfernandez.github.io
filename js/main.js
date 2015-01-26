@@ -107,7 +107,7 @@ $('.work a').click(function(e){
 	var verScrollPos=$(document).scrollTop();
 	$(document).scrollTop(verScrollPos);
 	var currentLi=$(this).parent('.work').index();
-	alert(currentLi);
+	
 	$('#overlay').fadeIn().scrollTop(0);
 	$('#overlay li').eq(currentLi).show();
 	$('#overlay img').removeClass().addClass('zoomIn animated');
