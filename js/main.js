@@ -4,6 +4,20 @@ $( document ).ready(function() {
 		        $(this).toggleClass( 'fadeInDown animated' );
 		    },
 		    {
+		        offset: '50%',
+		    });
+		   
+		    $('.contact_email').waypoint(function() {
+		        $(this).toggleClass( 'fadeInDown animated' );
+		    },
+		    {
+		        offset: '90%',
+		    });
+
+		    $('.work').waypoint(function() {
+		        $(this).toggleClass( 'bounceIn animated' );
+		    },
+		    {
 		        offset: '70%',
 		    });
 
@@ -14,7 +28,7 @@ $( document ).ready(function() {
 		        offset: '90%',
 		    });
 
-		     $('h3').waypoint(function() {
+		     $('.trabajos h3').waypoint(function() {
 		        $(this).toggleClass( 'fadeInLeft  animated' );
 		    },
 		    {
